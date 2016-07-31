@@ -1,43 +1,88 @@
 /*
 * @Author: miguel
 * @Date:   2016-07-01 23:45:42
-* @Last Modified by:   miguel
-* @Last Modified time: 2016-07-02 00:53:17
+* @Last Modified by:   Miguel Rodriguez
+* @Last Modified time: 2016-07-31 03:27:33
 */
-.header {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
 
-.footer {
-  border-top: 1px solid #444;
-  padding-top: 20px;
-  margin-top: 20px;
-  color: #999
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
 }
-
-.p {
-  text-align: center;
-  padding-top: 120px;
+body {
+  background: #FFFFFA;
 }
-
-.p a {
-  text-decoration: underline;
-  color: blue;
+header {
+  width: 100%;
 }
-.vertical-align {
-    display: flex;
-    align-items: center;
+header nav {
+  width: 100%;
+  max-width: 1600px;
+  margin: 20px auto;
+  background: #AF3411;
 }
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
+.menu-bar {
+  display: none;
+}
+header nav ul {
+  overflow: hidden;
+  list-style: none;
+}
+header nav ul li {
+  float: left;
+}
+header nav ul li a{
+  color: #fff;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  background: #EDA01C;
+}
+header nav ul li span {
+  margin-right: 10px;
+}
+section {
+  padding: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+section p {
+  margin-bottom: 20px;
+}
+ /* *** the media queries *** */
+ @media screen and (max-width: 768px) {
+  header nav {
+    width: 70%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+  }
+  header nav ul li {
+    display: block;
     float: none;
-}
-.frm-margin {
-
-}
-.btn-margin {
-	left-margin: -150px;
-	position: fixed;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+  }
+  .menu-bar {
+    display: block;
+    width: 100%;
+    background: #CCC;
+  }
+  .menu-bar .btn-menu {
+    display: block;
+    padding: 20px;
+    background: #AF3411;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .menu-bar span {
+    float: right;
+    font-size: 40px;    
+  }
 }
