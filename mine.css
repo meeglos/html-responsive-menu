@@ -2,7 +2,7 @@
 * @Author: miguel
 * @Date:   2016-07-01 23:45:42
 * @Last Modified by:   Miguel Rodriguez
-* @Last Modified time: 2016-08-03 02:08:18
+* @Last Modified time: 2016-08-04 01:23:28
 */
 @import 'https://fonts.googleapis.com/css?family=Ubuntu';
 
@@ -16,44 +16,43 @@
 /*GENERIC STYLES*/
 body { 
   background: #f2f2f2;
-  color: #222;
+  color: #F2EDE3;
   font-family: 'Ubuntu', sans-serif;
 }
 header {
   width: 100%;
 }
 nav {
-  background: #DBCF0C;
+  background: #D32B34;
+  width: 80%;
+  box-shadow: 2px 3px 5px #333;
+  min-width: 269px;
 }
 nav ul {
   list-style: none;
   display: flex;
+  flex-direction: column;
 }
-nav ul li {
-  border-right: 1px solid red;
-  flex-grow: 1;
-  position: relative;
+nav ul li:not(:last-child) {
+  border-bottom: 1px solid #F2EDE3;
+  /*position: relative;*/
 }
 nav li a {
   text-decoration: none;
-  color: #333;
+  color: #F2EDE3;
   display: block;
-  text-align: right;
   font-size: 24px;
   letter-spacing: 2px;
-  padding: 10px 40px 10px 0;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
 }
 .sub-comment {
   font-size: 11px;
-  display: block;
   letter-spacing: -.5px;
-  line-height: 2px;
-  margin-top: 1px;
-  /*float: right;*/
+  margin-left: 35px;
 }
 span[class|="mrc"] {
-  color: red;
-  text-shadow: 1px 2px 2px #333;
-  margin: 0 -30px;
-  position: absolute;
+  color: #F2EDE3;
+  text-shadow: 1px 2px 2px #444;
 }
